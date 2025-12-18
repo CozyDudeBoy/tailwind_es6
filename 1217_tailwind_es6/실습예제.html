@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>tailwindcss 실습 파리 바게트</title>
+    <!-- tailwind css 라이브러리 주소 cdn -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body>
+  <section class="slide mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+    <div class="flex items-center justify-between mb-6">
+    <h2 class="text-lg font-bold tracking-wide">PROMOTION</h2>
+    <a href="#" title="showmore" class="text-xs font-semibold hover:underline">SHOW MORE</a>
+    </div>
+    <div class="relative">
+  <!-- 왼쪽 버튼 (1번 카드 기준) -->
+  <button id="nextBtn"
+    class="absolute -left-8 top-[150px] -translate-y-1/2 z-10 bg-white/80 rounded-full p-2 shadow hover:bg-white">
+    <svg xmlns="http://www.w3.org/2000/svg" class="size-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
+    </svg>
+  </button>
+
+  <!-- 오른쪽 버튼 (4번 카드 기준) -->
+  <button id="prevBtn"
+    class="absolute -right-8 top-[150px] -translate-y-1/2 z-10 bg-white/80 rounded-full p-2 shadow hover:bg-white">
+    <svg xmlns="http://www.w3.org/2000/svg" class="size-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+    </svg>
+  </button>
+      <div class="overflow-hidden w-[1200px] mx-auto">   
+        <ul class="slide_wrapper flex ">
+          <li class="shrink-0 w-[300px] px-3" >
+            <div class="flex flex-col">
+              <img src="./img/pro1.jpg" class="w-[300px] h-[300px] object-cover">
+                <h3 class="mt-3 text-sm font-semibold">
+                  동반성장 개방형 플랫폼 ‘상생누리’ 2025
+                </h3>
+                <span class="mt-1 text-xs text-gray-400">READ MORE</span>
+            </div>
+          </li>
+          <li class="shrink-0 w-[300px] px-3" >
+            <div class="flex flex-col">
+              <img src="./img/pro2.jpg" class="w-[300px] h-[300px] object-cover">
+                <h3 class="mt-3 text-sm font-semibold">
+                  호두파운드 구매지 , 우리 벌꿀 카스테라 증정
+                </h3>
+                <span class="mt-1 text-xs text-gray-400">READ MORE</span>
+            </div>
+          </li>
+          <li class="shrink-0 w-[300px] px-3" >
+            <div class="flex flex-col">
+              <img src="./img/pro3.jpg" class="w-[300px] h-[300px] object-cover">
+                <h3 class="mt-3 text-sm font-semibold">
+                  베리밤 케이크 3종 출시 사전예약 혜택
+                </h3>
+                <span class="mt-1 text-xs text-gray-400">READ MORE</span>
+            </div>
+          </li>
+          <li class="shrink-0 w-[300px] px-3" >
+            <div class="flex flex-col">
+              <img src="./img/pro4.jpg" class="w-[300px] h-[300px] object-cover">
+                <h3 class="mt-3 text-sm font-semibold">
+                  홀리데이 케이크 사전예약, 최대30% 혜택
+                </h3>
+                <span class="mt-1 text-xs text-gray-400">READ MORE</span>
+            </div>
+          </li>
+          <li class="shrink-0 w-[300px] px-3" >
+            <div class="flex flex-col">
+              <img src="./img/pro5.jpg" class="w-[300px] h-[300px] object-cover">
+                <h3 class="mt-3 text-sm font-semibold">
+                  딸기일까? 케이크일까? 풍성한 달콤함이 터지는 베리밤BERRY BOMB
+                </h3>
+                <span class="mt-1 text-xs text-gray-400">READ MORE</span>
+            </div>
+          </li>
+          <li class="shrink-0 w-[300px] px-3" >
+            <div class="flex flex-col">
+              <img src="./img/pro6.jpg" class="w-[300px] h-[300px] object-cover">
+                <h3 class="mt-3 text-sm font-semibold">
+                  파란라벨 런치 보냉백 매/장/판/매
+                </h3>
+                <span class="mt-1 text-xs text-gray-400">READ MORE</span>
+            </div>
+          </li>
+          <li class="shrink-0 w-[300px] px-3" >
+            <div class="flex flex-col">
+              <img src="./img/pro7.jpg" class="w-[300px] h-[300px] object-cover">
+                <h3 class="mt-3 text-sm font-semibold">
+                  더피 케이크 파바에서 만날래?
+                </h3>
+                <span class="mt-1 text-xs text-gray-400">READ MORE</span>
+            </div>
+          </li>
+          <li class="shrink-0 w-[300px] px-3" >
+            <div class="flex flex-col">
+              <img src="./img/pro8.jpg" class="w-[300px] h-[300px] object-cover">
+                <h3 class="mt-3 text-sm font-semibold">
+                  베리밤 고블렛잔 세트
+                </h3>
+                <span class="mt-1 text-xs text-gray-400">READ MORE</span>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+</section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function(){
+        $('.slide_wrapper li:last-child').insertBefore('.slide_wrapper li:first-child');
+        
+        $('.slide_wrapper').css('margin-left','-300px');
+        
+        function movesleft(){
+          $('.slide_wrapper').animate({'margin-left':'-600px'},500,
+          function(){
+            $('.slide_wrapper li:first-child').insertAfter('.slide_wrapper li:last-child');
+            $('.slide_wrapper').css('margin-left','-300px');
+            });
+        }
+        function movesright(){
+      $('.slide_wrapper').animate(
+        {'margin-left':'0px'},
+        500,
+        function(){
+          $('.slide_wrapper li:last-child')
+            .insertBefore('.slide_wrapper li:first-child');
+          $('.slide_wrapper').css('margin-left','-300px');
+        }
+      );
+    }
+        let Timer = setInterval(movesleft,3000);
+
+            // 우, 버튼 클릭
+    $('#nextBtn').on('click', function(){
+      clearInterval(Timer);
+      movesleft();
+      Timer = setInterval(movesleft, 3000);
+    });
+
+    // 좌 ,버튼 클릭
+    $('#prevBtn').on('click', function(){
+      clearInterval(Timer);
+      movesright();
+      Timer = setInterval(movesleft, 3000);
+    });
+      });
+    </script>
+</body>
+</html>

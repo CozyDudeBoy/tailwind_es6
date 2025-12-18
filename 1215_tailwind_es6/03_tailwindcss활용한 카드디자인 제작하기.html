@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>03_tailwindcss활용한 카드디자인 제작하기</title>
+  <!-- tailwind cdn주소 -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            main: '#ff0000'
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body>
+  <h2>03_tailwindcss활용한 카드디자인 제작하기</h2>
+  <div class="bg-gray-100 items-center flex justify-center min-h-screen">
+    <!-- card component -->
+    <div class="max-w-sm rounded overflow-hidden shadow-lg bg-white">
+      <img src="https://placehold.co/600x400" alt="샘플이미지">
+
+      <!-- 내용섹션 -->
+      <div class="px-6 py-4">
+        <h3 class="font-bold text-xl mb-2 text-gray-800">카드디자인 제목</h3>
+        <p class="text-gray-700 text-base">
+          카드 내용<br>
+          <span class="text-main">카드</span> 내용입니다.
+        </p>
+      </div>
+
+      <!-- 뱃지 아이콘 -->
+      <div class="px-6 pt-4 pb-2">
+        <span>#tailwindcss</span>
+        <span>#html5</span>
+        <span>#css3</span>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
